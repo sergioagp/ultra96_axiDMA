@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xczu3eg-sbva484-1-e" LaunchTime="1591106824">
+<GenRun Id="impl_1" LaunchPart="xczu3eg-sbva484-1-e" LaunchTime="1591111083">
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <File Type="BG-DRC" Name="design_1_wrapper.drc"/>
   <File Type="BG-BGN" Name="design_1_wrapper.bgn"/>

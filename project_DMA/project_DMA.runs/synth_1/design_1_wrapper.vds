@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Tue Jun  2 15:07:07 2020
-# Process ID: 47954
+# Start of session at: Tue Jun  2 16:22:03 2020
+# Process ID: 60710
 # Current directory: /home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/design_1_wrapper.vds
@@ -13,37 +13,37 @@ source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/spereira/opt/Xilinx/Vivado/2018.3/data/ip'.
-add_files: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1352.270 ; gain = 0.000 ; free physical = 6308 ; free virtual = 13472
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1353.703 ; gain = 0.000 ; free physical = 5060 ; free virtual = 12457
 Command: synth_design -top design_1_wrapper -part xczu3eg-sbva484-1-e
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 47999 
+INFO: Helper process launched with PID 60768 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1384.270 ; gain = 31.914 ; free physical = 6191 ; free virtual = 13360
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1380.703 ; gain = 26.914 ; free physical = 4945 ; free virtual = 12342
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_axi_dma_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (1#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_axi_dma_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' requires 94 connections, but only 91 given [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:177]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (2#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_axi_smc_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_0' (3#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:537]
-INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:832]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (4#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_auto_ds_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (5#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_auto_pc_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 53 given [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:1171]
-INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (6#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:832]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_0' (7#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:537]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_100M_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_100M_0' (8#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'rst_ps8_0_100M' of module 'design_1_rst_ps8_0_100M_0' requires 10 connections, but only 6 given [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:444]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_0' (1#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_dma_0' of module 'design_1_axi_dma_0_0' requires 64 connections, but only 61 given [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:148]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (2#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_axi_smc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axis_data_fifo_0_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axis_data_fifo_0_0' (3#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_axis_data_fifo_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:445]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:740]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (4#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (5#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 53 given [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:1079]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (6#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:740]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_0' (7#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:445]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_100M_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_100M_0' (8#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_rst_ps8_0_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps8_0_100M' of module 'design_1_rst_ps8_0_100M_0' requires 10 connections, but only 6 given [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:352]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
 	Parameter IN0_WIDTH bound to: 1 - type: integer 
@@ -82,9 +82,9 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_1_xlconcat' [/home/spere
 	Parameter NUM_PORTS bound to: 2 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_1_xlconcat' (9#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (10#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
-INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (11#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-47954-X556URK/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
-WARNING: [Synth 8-350] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' requires 83 connections, but only 79 given [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:455]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (11#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/.Xil/Vivado-60710-X556URK/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' requires 83 connections, but only 79 given [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:363]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (12#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (13#1) [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-3331] design xlconcat_v2_1_1_xlconcat has unconnected port In2[0]
@@ -122,7 +122,7 @@ WARNING: [Synth 8-3331] design s00_couplers_imp_1A7ZMW4 has unconnected port M_A
 WARNING: [Synth 8-3331] design design_1_ps8_0_axi_periph_0 has unconnected port ACLK
 WARNING: [Synth 8-3331] design design_1_ps8_0_axi_periph_0 has unconnected port ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1431.020 ; gain = 78.664 ; free physical = 6201 ; free virtual = 13372
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1426.453 ; gain = 72.664 ; free physical = 4959 ; free virtual = 12356
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -135,10 +135,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1431.020 ; gain = 78.664 ; free physical = 6201 ; free virtual = 13373
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1426.453 ; gain = 72.664 ; free physical = 4959 ; free virtual = 12356
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1431.020 ; gain = 78.664 ; free physical = 6201 ; free virtual = 13373
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1426.453 ; gain = 72.664 ; free physical = 4959 ; free virtual = 12356
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -163,14 +163,14 @@ Parsing XDC File [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project
 Finished Parsing XDC File [/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2300.387 ; gain = 0.000 ; free physical = 5495 ; free virtual = 12682
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2295.812 ; gain = 0.000 ; free physical = 4344 ; free virtual = 11741
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2300.387 ; gain = 0.000 ; free physical = 5494 ; free virtual = 12681
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2300.387 ; gain = 0.000 ; free physical = 5494 ; free virtual = 12681
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2295.812 ; gain = 0.000 ; free physical = 4344 ; free virtual = 11741
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2295.812 ; gain = 0.000 ; free physical = 4344 ; free virtual = 11741
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2300.387 ; gain = 948.031 ; free physical = 5588 ; free virtual = 12770
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2295.812 ; gain = 942.023 ; free physical = 4404 ; free virtual = 11800
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -178,7 +178,7 @@ Start Loading Part and Timing Information
 Loading part: xczu3eg-sbva484-1-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2300.387 ; gain = 948.031 ; free physical = 5588 ; free virtual = 12770
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2295.812 ; gain = 942.023 ; free physical = 4404 ; free virtual = 11800
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -194,10 +194,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/xlconcat_0. (constraint fi
 Applied set_property DONT_TOUCH = true for design_1_i/ps8_0_axi_periph/s00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps8_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2300.387 ; gain = 948.031 ; free physical = 5588 ; free virtual = 12770
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2295.812 ; gain = 942.023 ; free physical = 4404 ; free virtual = 11800
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 2300.387 ; gain = 948.031 ; free physical = 5581 ; free virtual = 12770
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2295.812 ; gain = 942.023 ; free physical = 4405 ; free virtual = 11802
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -237,7 +237,7 @@ WARNING: [Synth 8-3331] design design_1_ps8_0_axi_periph_0 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_ps8_0_axi_periph_0 has unconnected port M00_ACLK
 WARNING: [Synth 8-3331] design design_1_ps8_0_axi_periph_0 has unconnected port M00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 2300.387 ; gain = 948.031 ; free physical = 5573 ; free virtual = 12763
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 2295.812 ; gain = 942.023 ; free physical = 4393 ; free virtual = 11792
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -251,13 +251,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/zynq_ultra_ps_e_0/pl_clk0' to pin 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:30 . Memory (MB): peak = 2557.238 ; gain = 1204.883 ; free physical = 4975 ; free virtual = 12174
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:57 . Memory (MB): peak = 2551.664 ; gain = 1197.875 ; free physical = 3825 ; free virtual = 11224
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:30 . Memory (MB): peak = 2557.238 ; gain = 1204.883 ; free physical = 4975 ; free virtual = 12174
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:57 . Memory (MB): peak = 2551.664 ; gain = 1197.875 ; free physical = 3825 ; free virtual = 11224
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -269,7 +269,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:30 . Memory (MB): peak = 2568.254 ; gain = 1215.898 ; free physical = 4973 ; free virtual = 12172
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:57 . Memory (MB): peak = 2562.680 ; gain = 1208.891 ; free physical = 3823 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -293,7 +293,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:51 ; elapsed = 00:01:31 . Memory (MB): peak = 2568.254 ; gain = 1215.898 ; free physical = 4972 ; free virtual = 12170
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 2562.680 ; gain = 1208.891 ; free physical = 3823 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -306,7 +306,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:51 ; elapsed = 00:01:31 . Memory (MB): peak = 2568.254 ; gain = 1215.898 ; free physical = 4972 ; free virtual = 12170
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 2562.680 ; gain = 1208.891 ; free physical = 3823 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -318,25 +318,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:01:31 . Memory (MB): peak = 2568.254 ; gain = 1215.898 ; free physical = 4972 ; free virtual = 12170
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 2562.680 ; gain = 1208.891 ; free physical = 3823 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:01:31 . Memory (MB): peak = 2568.254 ; gain = 1215.898 ; free physical = 4972 ; free virtual = 12170
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 2562.680 ; gain = 1208.891 ; free physical = 3823 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:31 . Memory (MB): peak = 2568.254 ; gain = 1215.898 ; free physical = 4972 ; free virtual = 12170
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 2562.680 ; gain = 1208.891 ; free physical = 3823 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:31 . Memory (MB): peak = 2568.254 ; gain = 1215.898 ; free physical = 4972 ; free virtual = 12171
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 2562.680 ; gain = 1208.891 ; free physical = 3823 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -372,32 +372,32 @@ Report Instance Areas:
 +------+---------------------+----------------------------+------+
 |      |Instance             |Module                      |Cells |
 +------+---------------------+----------------------------+------+
-|1     |top                  |                            |  1849|
-|2     |  design_1_i         |design_1                    |  1849|
+|1     |top                  |                            |  1661|
+|2     |  design_1_i         |design_1                    |  1661|
 |3     |    ps8_0_axi_periph |design_1_ps8_0_axi_periph_0 |   519|
 |4     |      s00_couplers   |s00_couplers_imp_1A7ZMW4    |   519|
 |5     |    xlconcat_0       |design_1_xlconcat_0_0       |     0|
 +------+---------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:31 . Memory (MB): peak = 2568.254 ; gain = 1215.898 ; free physical = 4972 ; free virtual = 12171
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 2562.680 ; gain = 1208.891 ; free physical = 3823 ; free virtual = 11222
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:01:03 . Memory (MB): peak = 2568.254 ; gain = 346.531 ; free physical = 5011 ; free virtual = 12210
-Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:01:31 . Memory (MB): peak = 2568.262 ; gain = 1215.898 ; free physical = 5011 ; free virtual = 12210
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:41 . Memory (MB): peak = 2562.680 ; gain = 339.531 ; free physical = 3860 ; free virtual = 11259
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:58 . Memory (MB): peak = 2562.688 ; gain = 1208.891 ; free physical = 3860 ; free virtual = 11259
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2588.887 ; gain = 0.000 ; free physical = 4952 ; free virtual = 12152
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2584.312 ; gain = 0.000 ; free physical = 3802 ; free virtual = 11200
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
 41 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:01:33 . Memory (MB): peak = 2600.887 ; gain = 1248.617 ; free physical = 4999 ; free virtual = 12199
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2600.887 ; gain = 0.000 ; free physical = 4999 ; free virtual = 12199
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:59 . Memory (MB): peak = 2596.312 ; gain = 1242.609 ; free physical = 3848 ; free virtual = 11247
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2596.312 ; gain = 0.000 ; free physical = 3848 ; free virtual = 11247
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jun  2 15:09:00 2020...
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  2 16:23:17 2020...

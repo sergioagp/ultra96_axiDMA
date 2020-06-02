@@ -2,22 +2,11 @@
 <Root MajorVersion="0" MinorVersion="36">
   <CompositeFile CompositeFileTopName="bd_afc3" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1591106819"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1591106819"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1591106819"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1591106819"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1591111079"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1591111079"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1591111079"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1591111079"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="synth/bd_afc3.v" Type="Verilog">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-      </File>
-      <File Name="sim/bd_afc3.v" Type="Verilog">
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip/ip_0/bd_afc3_one_0.xci" Type="IP">
         <Instance HierarchyPath="clk_map/one"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -154,23 +143,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/ip_17/bd_afc3_sarn_1.xci" Type="IP">
-        <Instance HierarchyPath="s01_nodes/s01_ar_node"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/ip_18/bd_afc3_srn_1.xci" Type="IP">
-        <Instance HierarchyPath="s01_nodes/s01_r_node"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/ip_19/bd_afc3_sawn_0.xci" Type="IP">
+      <File Name="ip/ip_17/bd_afc3_sawn_0.xci" Type="IP">
         <Instance HierarchyPath="s01_nodes/s01_aw_node"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -178,7 +151,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/ip_20/bd_afc3_swn_0.xci" Type="IP">
+      <File Name="ip/ip_18/bd_afc3_swn_0.xci" Type="IP">
         <Instance HierarchyPath="s01_nodes/s01_w_node"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -186,7 +159,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/ip_21/bd_afc3_sbn_0.xci" Type="IP">
+      <File Name="ip/ip_19/bd_afc3_sbn_0.xci" Type="IP">
         <Instance HierarchyPath="s01_nodes/s01_b_node"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -194,63 +167,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/ip_22/bd_afc3_s02mmu_0.xci" Type="IP">
-        <Instance HierarchyPath="s02_entry_pipeline/s02_mmu"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/ip_23/bd_afc3_s02tr_0.xci" Type="IP">
-        <Instance HierarchyPath="s02_entry_pipeline/s02_transaction_regulator"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/ip_24/bd_afc3_s02sic_0.xci" Type="IP">
-        <Instance HierarchyPath="s02_entry_pipeline/s02_si_converter"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/ip_25/bd_afc3_s02a2s_0.xci" Type="IP">
-        <Instance HierarchyPath="s02_axi2sc"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/ip_26/bd_afc3_sawn_1.xci" Type="IP">
-        <Instance HierarchyPath="s02_nodes/s02_aw_node"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/ip_27/bd_afc3_swn_1.xci" Type="IP">
-        <Instance HierarchyPath="s02_nodes/s02_w_node"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/ip_28/bd_afc3_sbn_1.xci" Type="IP">
-        <Instance HierarchyPath="s02_nodes/s02_b_node"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/ip_29/bd_afc3_m00s2a_0.xci" Type="IP">
+      <File Name="ip/ip_20/bd_afc3_m00s2a_0.xci" Type="IP">
         <Instance HierarchyPath="m00_sc2axi"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -258,7 +175,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/ip_30/bd_afc3_m00arn_0.xci" Type="IP">
+      <File Name="ip/ip_21/bd_afc3_m00arn_0.xci" Type="IP">
         <Instance HierarchyPath="m00_nodes/m00_ar_node"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -266,7 +183,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/ip_31/bd_afc3_m00rn_0.xci" Type="IP">
+      <File Name="ip/ip_22/bd_afc3_m00rn_0.xci" Type="IP">
         <Instance HierarchyPath="m00_nodes/m00_r_node"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -274,7 +191,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/ip_32/bd_afc3_m00awn_0.xci" Type="IP">
+      <File Name="ip/ip_23/bd_afc3_m00awn_0.xci" Type="IP">
         <Instance HierarchyPath="m00_nodes/m00_aw_node"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -282,7 +199,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/ip_33/bd_afc3_m00wn_0.xci" Type="IP">
+      <File Name="ip/ip_24/bd_afc3_m00wn_0.xci" Type="IP">
         <Instance HierarchyPath="m00_nodes/m00_w_node"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -290,7 +207,7 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/ip_34/bd_afc3_m00bn_0.xci" Type="IP">
+      <File Name="ip/ip_25/bd_afc3_m00bn_0.xci" Type="IP">
         <Instance HierarchyPath="m00_nodes/m00_b_node"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
@@ -298,12 +215,23 @@
         <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
-      <File Name="ip/ip_35/bd_afc3_m00e_0.xci" Type="IP">
+      <File Name="ip/ip_26/bd_afc3_m00e_0.xci" Type="IP">
         <Instance HierarchyPath="m00_exit_pipeline/m00_exit"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
         <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="synth/bd_afc3.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+      </File>
+      <File Name="sim/bd_afc3.v" Type="Verilog">
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="hw_handoff/design_1_axi_smc_0.hwh" Type="HwHandoff">
