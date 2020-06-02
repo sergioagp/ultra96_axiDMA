@@ -1,8 +1,0 @@
-//arch = zynqmp; split = false; format = BIN
-the_ROM_image:
-{
-	[fsbl_config]a53_x64
-	[bootloader]/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.sdk/Ultra96_FSBL/Debug/Ultra96_FSBL.elf
-	[destination_device = pl]/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
-	[destination_cpu = a53-0]/home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.sdk/axidma/Debug/axidma.elf
-}

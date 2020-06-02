@@ -1,7 +1,7 @@
 // Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-// Date        : Wed May 27 17:25:32 2020
+// Date        : Mon Jun  1 18:22:37 2020
 // Host        : X556URK running 64-bit Ubuntu 20.04 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/spereira/projects/PhD/ultra96_axiDMA/project_DMA/project_DMA.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_100M_0/design_1_rst_ps8_0_100M_0_sim_netlist.v
