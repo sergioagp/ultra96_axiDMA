@@ -79,6 +79,8 @@
 
 /***************************** Include Files *********************************/
 
+#include "xtime_l.h"
+
 #include "xaxidma.h"
 #include "xparameters.h"
 #include "xil_exception.h"
@@ -240,6 +242,8 @@ volatile int Error;
 ******************************************************************************/
 int main(void)
 {
+    XTime tStart, tEnd;
+
 	int Status;
 	XAxiDma_Config *Config;
 	int Tries = NUMBER_OF_TRANSFERS;
@@ -327,6 +331,9 @@ int main(void)
 	/* Send a packet */
 	for(Index = 0; Index < Tries; Index ++) {
 
+
+	    XTime_GetTime(&tStart);
+
 		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) RxBufferPtr,
 					MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA);
 
@@ -365,6 +372,12 @@ int main(void)
 		if (Status != XST_SUCCESS) {
 			xil_printf("Data check failed\r\n");
 			goto Done;
+		} else {
+		    XTime_GetTime(&tEnd);
+
+		    printf("Output took %llu clock cycles.\r\n", 2*(tEnd - tStart));
+		    printf("Output took %.2f us.\r\n",
+		           1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND/1000000));
 		}
 	}
 
