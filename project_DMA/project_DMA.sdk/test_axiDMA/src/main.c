@@ -83,6 +83,8 @@
  * ***************************************************************************
  */
 /***************************** Include Files *********************************/
+
+#include "xtime_l.h"
 #include "xaxidma.h"
 #include "xparameters.h"
 #include "xil_exception.h"
@@ -266,6 +268,9 @@ u32 *Packet = (u32 *) TX_BUFFER_BASE;
 ******************************************************************************/
 int main(void)
 {
+
+
+	XTime tStart, tEnd;
 	int Status;
 	XAxiDma_Config *Config;
 
@@ -327,6 +332,7 @@ int main(void)
 	Error = 0;
 
 	/* Send a packet */
+	XTime_GetTime(&tStart);
 	Status = SendPacket(&AxiDma);
 	if (Status != XST_SUCCESS) {
 
@@ -362,7 +368,10 @@ int main(void)
 
 			goto Done;
 		}
-
+		XTime_GetTime(&tEnd);
+		 printf("Output took %llu clock cycles.\n", 2*(tEnd - tStart));
+		 printf("Output took %.2f us.\n",
+		           1.0 * (tEnd - tStart) / (COUNTS_PER_SECOND/1000000));
 		xil_printf("Successfully ran AXI DMA SG interrupt Example\r\n");
 	}
 
